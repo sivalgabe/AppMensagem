@@ -10,6 +10,7 @@ class MensagemActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mensagem)
 
+        //Botao de voltar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         receberMensagem()
@@ -20,6 +21,8 @@ class MensagemActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvMensagem).text = mensagem
 
     }
+
+    //Botao de voltar
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
             this.finish()
